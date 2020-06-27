@@ -9,17 +9,16 @@ const animation = lottie.loadAnimation({
 });
 
 animation.addEventListener("data_ready", function () {
-  // animation.setSpeed(5);
   let lastY;
   let lastDirection;
   let direction;
-  let play = false;
   document.addEventListener("touchmove", (e) => {
     const currentY = e.touches[0].clientY;
-    // moving down
+
+    // Scrolling down
     if (currentY > lastY) {
       direction = "down";
-      // moving up
+      // Scrolling up
     } else if (currentY < lastY) {
       direction = "up";
     }
@@ -27,11 +26,16 @@ animation.addEventListener("data_ready", function () {
   });
 
   document.addEventListener("touchstart", () => {
+    // Ensures the correct end animation to avoid jumpy animation transitions
+    // when Y direction changes midway through a touch.
     lastDirection = direction;
+
     if (direction === "down") {
+      // stretch start animation
       animation.playSegments([0, 10], true);
       lastDirection = "down";
     } else {
+      // compress start animation
       animation.playSegments([20, 30], true);
       lastDirection = "up";
     }
@@ -39,8 +43,10 @@ animation.addEventListener("data_ready", function () {
 
   document.addEventListener("touchend", () => {
     if (lastDirection === "down") {
+      // stretch end animation
       animation.playSegments([10, 20], true);
     } else {
+      // compress end animation
       animation.playSegments([30, 40], true);
     }
   });
