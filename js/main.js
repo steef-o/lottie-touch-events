@@ -1,4 +1,4 @@
-const animContainer = document.getElementById("lottie");
+const animContainer = document.getElementById("wifi-icon");
 
 const animation = lottie.loadAnimation({
   container: animContainer,

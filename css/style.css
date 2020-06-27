@@ -1,6 +1,27 @@
-#lottie {
+#wifi-icon {
+  margin: 0 auto;
+  width: 20%;
+  padding-top: 1rem; }
+
+.card {
+  background-color: white;
+  border-radius: 3px;
   position: fixed;
-  width: 20vw; }
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%); }
+  .card:hover, .card :focus {
+    background-color: #ff00ff;
+    color: white;
+    cursor: pointer; }
+    .card:hover svg g g path, .card :focus svg g g path {
+      fill: white; }
+  .card-text {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-bottom: 1rem; }
+    .card-text:hover, .card-text :focus {
+      text-decoration: underline; }
 
 .scrollable-area-1 {
   height: 80vh;

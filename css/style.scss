@@ -1,7 +1,36 @@
-#lottie{
-    position: fixed;
-    width: 20vw;
+#wifi-icon{
+    margin: 0 auto;
+    width: 20%;
+    padding-top: 1rem;
 }
+
+.card {
+    background-color: white;
+    border-radius: 3px;
+    position: fixed;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%);
+
+    &:hover, :focus {
+        background-color: #ff00ff;
+        color: white;
+        cursor: pointer;
+        svg g g path{
+            fill:white;
+        }
+    }
+
+    &-text{
+        text-align: center;
+        font-family: Arial, sans-serif;
+        margin-bottom: 1rem;
+        &:hover, :focus {
+            text-decoration: underline;
+        }
+    }
+}
+
 .scrollable-area-1 {
     height: 80vh;
     background-color: bisque;
