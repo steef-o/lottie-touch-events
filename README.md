@@ -2,4 +2,4 @@
 
 Lottie animation for touch events on mobile
 
-demo:
+demo: https://steef-o.github.io/lottie-touch-events/
