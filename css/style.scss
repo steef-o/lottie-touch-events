@@ -1,4 +1,4 @@
-#wifi-icon{
+#wifi-icon {
     margin: 0 auto;
     width: 20%;
     padding-top: 1rem;
@@ -12,20 +12,22 @@
     left: 50%;
     transform: translate(-50%);
 
-    &:hover, :focus {
+    &:hover,
+    :focus {
         background-color: #ff00ff;
         color: white;
         cursor: pointer;
-        svg g g path{
-            fill:white;
+        svg g g path {
+            fill: white;
         }
     }
 
-    &-text{
+    &-text {
         text-align: center;
         font-family: Arial, sans-serif;
         margin-bottom: 1rem;
-        &:hover, :focus {
+        &:hover,
+        :focus {
             text-decoration: underline;
         }
     }

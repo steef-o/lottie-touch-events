@@ -10,17 +10,20 @@
   top: 25%;
   left: 50%;
   transform: translate(-50%); }
-  .card:hover, .card :focus {
+  .card:hover,
+  .card :focus {
     background-color: #ff00ff;
     color: white;
     cursor: pointer; }
-    .card:hover svg g g path, .card :focus svg g g path {
+    .card:hover svg g g path,
+    .card :focus svg g g path {
       fill: white; }
   .card-text {
     text-align: center;
     font-family: Arial, sans-serif;
     margin-bottom: 1rem; }
-    .card-text:hover, .card-text :focus {
+    .card-text:hover,
+    .card-text :focus {
       text-decoration: underline; }
 
 .scrollable-area-1 {
